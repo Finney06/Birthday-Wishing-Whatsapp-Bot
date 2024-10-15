@@ -1,0 +1,102 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class of Psi '24</title>
+    <link rel="icon" type="image/png" href="images/rocket.png" sizes="32x32" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Class of Psi '24</h1>
+    <form id="form">
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-control">
+        <label for="nickname"
+          >Nickname <span class="optional">(optional)</span></label
+        >
+        <input type="text" id="nickname" placeholder="Enter your nickname" />
+      </div>
+      <div class="form-control">
+        <label for="whatsapp-number">WhatsApp Number</label>
+        <input
+          type="tel"
+          id="whatsapp-number"
+          placeholder="Enter your WhatsApp number"
+          value="+234"
+          required
+        />
+        <small>Enter a valid phone number (e.g., +234 901 234 5678)</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" placeholder="MM-DD" required />
+        <span id="dob-helper" class="helper-text"
+          >Only select day and month. The year is preset to 2000.</span
+        >
+      </div>
+      <div class="form-control">
+        <label for="picture">Upload a picture (Image files only)</label>
+        <input type="file" id="picture" accept="image/*" required />
+      </div>
+      <button class="submit-button" type="submit">
+        <span id="submit-text">Submit</span>
+        <div id="loader" style="display: none"></div>
+      </button>
+    </form>
+
+    <div id="login-popup" class="overlay">
+      <div class="popup-card">
+        <img
+          src="images/200.webp"
+          alt="Circular Image"
+          class="circular-image"
+          id="giffy"
+        />
+        <h2 id="continual">Enter your email to Proceed:</h2>
+        <div id="login-input">
+          <label for="login-email">Email</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <button id="continue-button" class="button">Proceed</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay">
+      <div class="popup-card">
+        <img
+          src="images/giphy-unscreen.gif"
+          alt="Circular Image"
+          class="circular-image"
+        />
+        <h2>Thanks for your submission!</h2>
+        <button id="ok-button" class="button">
+          OK <img class="rocket" src="images/rocket.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
