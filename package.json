@@ -4,7 +4,7 @@
   "description": "collecting dob data for the automated wishing bot.",
   "main": "automation.js",
   "scripts": {
-    "start": "node automation.js",
+    "start": "node scheduler.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
